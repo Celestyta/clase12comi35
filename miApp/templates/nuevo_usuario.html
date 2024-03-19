@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuevo Usuario</title>
+</head>
+<body>
+
+    {{%for nuevo_usuario in nuevo_usuario%}}
+    <h1>Nuevos Usuarios</h1>
+    <p class="lead">
+        Nuevo Usuario
+    </p>
+    <bs5-div>
+    <p>{{nuevo_usuario.nombre}}</p></bs5-div>
+    <p>{{nuevo_usuario.apellido}}</p>
+    <p>{{nuevo_usuario.edad}}</p>
+    {{%endfor%}}
+</body>
+</html>
